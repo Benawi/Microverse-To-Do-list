@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"webpack"
+    "build": "webpack",
+    "dev":"webpack serve"
   },
   "repository": {
     "type": "git",
@@ -19,13 +20,17 @@
   },
   "homepage": "https://github.com/Benawi/Microverse-To-Do-list#readme",
   "devDependencies": {
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0",
     "web": "^0.0.2",
     "webpack": "^5.82.0",
-    "webpack-cli": "^5.1.1"
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
     "ajv": "^8.12.0",
