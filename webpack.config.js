@@ -1,9 +1,11 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const bundleAnalyzerPlugin=require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+//const bundleAnalyzerPlugin=require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 module.exports = {
   entry: './src/index.js',
   devServer: {
-    contentBase: './dist',
+    static: './dist',
+    port:9000
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -30,7 +32,14 @@ module.exports = {
       },
     ],
   },
-  Plugin:[
+ /*  Plugin:[
     new bundleAnalyzerPlugin()
-  ]
+  ], */
+  /* devServer:{
+    contentBase: path.join(__dirname,'src'),
+    port:9000
+  } */
+  optimization: {
+    runtimeChunk: 'single',
+  },
 };
