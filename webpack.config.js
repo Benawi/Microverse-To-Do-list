@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const bundleAnalyzerPlugin=require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 module.exports = {
   entry: './src/index.js',
   devServer: {
@@ -21,7 +21,8 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ['style-loader', 
+        'css-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -29,4 +30,7 @@ module.exports = {
       },
     ],
   },
+  Plugin:[
+    new bundleAnalyzerPlugin()
+  ]
 };
