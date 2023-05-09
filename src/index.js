@@ -36,3 +36,5 @@ const TASKS_DATA = [
     </div>`;
     });
   }
+
+  generateHtmlTasks();
