@@ -147,11 +147,11 @@ npx hint .
 ```
 Track CSS linter errors run:
 ```
-npx stylelint "**/*.{css,scss}"
+npx stylelint "**/*.{css,scss}
 ```
 Track JavaScript linter errors run:
 ```
-npx eslint ."
+npx eslint .
 ```
 
 ### Deployment

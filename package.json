@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev":"webpack serve"
+    "dev": "webpack serve"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,11 @@
   },
   "homepage": "https://github.com/Benawi/Microverse-To-Do-list#readme",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.27.5",
     "style-loader": "^3.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
@@ -103,6 +107,7 @@
     "has-flag": "^4.0.0",
     "hosted-git-info": "^4.1.0",
     "html-tags": "^3.3.1",
+    "html-webpack-plugin": "^5.5.1",
     "htmlparser2": "^3.10.1",
     "ignore": "^5.2.4",
     "import-fresh": "^3.3.0",

@@ -1,11 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-//const bundleAnalyzerPlugin=require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 module.exports = {
   entry: './src/index.js',
   devServer: {
     static: './dist',
-    port:9000
+    port: 9000,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -23,8 +23,8 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 
-        'css-loader'],
+        use: ['style-loader',
+          'css-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -32,13 +32,6 @@ module.exports = {
       },
     ],
   },
- /*  Plugin:[
-    new bundleAnalyzerPlugin()
-  ], */
-  /* devServer:{
-    contentBase: path.join(__dirname,'src'),
-    port:9000
-  } */
   optimization: {
     runtimeChunk: 'single',
   },
