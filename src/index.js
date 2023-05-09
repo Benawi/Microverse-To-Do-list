@@ -1,1 +1,1 @@
-npm
+import './styles.css';
