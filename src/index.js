@@ -7,7 +7,7 @@ const TASKS_DATA = [
     },
     {
       index: 1,
-      description: 'write  code',
+      description: 'Participate programming contest',
       completed: true,
     },
     {
