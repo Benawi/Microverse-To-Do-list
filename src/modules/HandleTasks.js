@@ -4,4 +4,25 @@ export default class HandleTasks {
     this.UI = UI;
   }
 
+  addItem() {
+    this.input = document.getElementById('add-task');
+    this.arrowIcon = document.querySelector('.arrow-icon');
+
+    this.input.addEventListener('keydown', (e) => {
+      const i = this.store.getItems().length;
+
+      if (e.key === 'Enter' && e.target.value) {
+        const obj = {
+          description: e.target.value,
+          completed: false,
+          index: i,
+        };
+        this.input.value = '';
+        this.store.add(obj);
+        this.UI.generateHtmlTasks();
+        e.preventDefault();
+      }
+    });
+
+    
 }
