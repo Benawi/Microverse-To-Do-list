@@ -44,7 +44,6 @@ export default class HandleTasks {
     this.UI.generateHtmlTasks();
   }
 
-
   toggleAllElementTrashIcon(element) {
     this.trash = element.parentElement.querySelector('.trash-icon');
     this.ellipsis = element.parentElement.querySelector('.fa-ellipsis-v');
@@ -81,7 +80,7 @@ export default class HandleTasks {
         e.target.addEventListener('blur', () => {
           this.store.updateDescription(index, e.target.value);
         });
-      } 
+      }
     });
   }
 }

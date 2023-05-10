@@ -5,9 +5,9 @@ import EllipsisIcon from '../assets/icons/ellipsis-v-solid.svg';
 
 export default class UI {
   constructor(store) {
-   
     this.store = store;
   }
+
   updateIcons() {
     this.syncIcon = document.querySelector('.sync-icon');
     this.syncIcon.src = SyncIcon;
@@ -36,7 +36,5 @@ export default class UI {
       <img src="${TrashIcon}" class="icon trash-icon ms-auto text-secundary d-none"/>
     </div>`;
     });
-
   }
-
 }
