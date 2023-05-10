@@ -44,5 +44,12 @@ export default class HandleTasks {
     this.UI.generateHtmlTasks();
   }
 
+  toggleElementTrashIcon(element) {
+    this.trash = element.parentElement.querySelector('.trash-icon');
+    this.ellipsis = element.parentElement.querySelector('.fa-ellipsis-v');
+    this.trash.classList.remove('d-none');
+    this.ellipsis.setAttribute('class', 'icon ellipsis-icon fas fa-ellipsis-v ms-auto text-secondary d-none');
+  }
+
   
 }
