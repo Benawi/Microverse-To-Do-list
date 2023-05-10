@@ -8,5 +8,14 @@ export default class UI {
    
     this.store = store;
   }
+  updateIcons() {
+    this.syncIcon = document.querySelector('.sync-icon');
+    this.syncIcon.src = SyncIcon;
+
+    this.arrowIcon = document.querySelector('.arrow-icon');
+    this.arrowIcon = ArrowIcon;
+  }
+
+  
 
 }
