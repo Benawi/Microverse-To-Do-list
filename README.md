@@ -47,7 +47,6 @@ The repository also contains files for setting up linters and validators.
   </ul>
 
 
-
 ### Key Features <a name="key-features"></a>
 ## Awesome Books - [HTML/CSS & JavaScript Awesome Books project](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m2_plain_js_classes_v1_1.md)
 ### Features Added:
