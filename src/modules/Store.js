@@ -13,4 +13,14 @@ export default class Store {
       this.updateLocalStorage();
     }
   
-}
+    remove(index) {
+      this.task_data.splice(index, 1);
+      this.task_data = this.task_data.filter((obj, index) => {
+        obj.index = index;
+        return true;
+      });
+      this.updateLocalStorage();
+    }
+  
+   
+  }
