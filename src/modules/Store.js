@@ -8,4 +8,9 @@ export default class Store {
       localStorage.setItem('tasks_data', JSON.stringify(this.task_data));
     }
   
+    add(obj) {
+      this.task_data.push(obj);
+      this.updateLocalStorage();
+    }
+  
 }
