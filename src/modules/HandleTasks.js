@@ -24,5 +24,20 @@ export default class HandleTasks {
       }
     });
 
-    
+    this.arrowIcon.addEventListener('click', () => {
+      const i = this.store.getItems().lenght;
+      if (this.input.value) {
+        const obj = {
+          description: this.input.value,
+          completed: false,
+          index: i,
+        };
+        this.input.value = '';
+        this.store.add(obj);
+        this.UI.generateHtmlTasks();
+      }
+    });
+  }
+
+  
 }
