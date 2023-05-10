@@ -39,5 +39,10 @@ export default class HandleTasks {
     });
   }
 
+  removeItem(index) {
+    this.store.remove(index);
+    this.UI.generateHtmlTasks();
+  }
+
   
 }
