@@ -1,6 +1,10 @@
 import './styles.css';
+import Store from './modules/Store.js';
+import HandleTasks from './modules/HandleTasks.js';
+import UI from './modules/UI.js';
 
-const TASKS_DATA = [
+
+/* const TASKS_DATA = [
   {
     index: 0,
     description: 'Attend morning session',
@@ -21,9 +25,17 @@ const TASKS_DATA = [
     description: 'Meditate',
     completed: false,
   },
-];
+]; */
+const STORE = new Store();
+const UI_INTERFACE = new UI(STORE);
+const LIST = new HandleTasks(STORE, UI_INTERFACE);
 
-function generateHtmlTasks() {
+UI_INTERFACE.generateHtmlTasks();
+LIST.addItem();
+//LIST.clearAll();
+LIST.updateValue();
+
+/* function generateHtmlTasks() {
   const todoListContainer = document.getElementById('todo-list-container');
 
   TASKS_DATA.forEach((obj) => {
@@ -38,4 +50,4 @@ function generateHtmlTasks() {
   });
 }
 
-generateHtmlTasks();
+generateHtmlTasks(); */
