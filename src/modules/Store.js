@@ -22,5 +22,12 @@ export default class Store {
       this.updateLocalStorage();
     }
   
-   
+  
+    updateDescription(index, description) {
+      this.task_data[index].description = description;
+      this.updateLocalStorage();
+    }
+  
+    // changeOrder(fromIndex, toIndex){};
+ 
   }
