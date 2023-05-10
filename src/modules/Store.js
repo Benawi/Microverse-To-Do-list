@@ -4,4 +4,8 @@ export default class Store {
       || [];
     }
   
+    updateLocalStorage() {
+      localStorage.setItem('tasks_data', JSON.stringify(this.task_data));
+    }
+  
 }
