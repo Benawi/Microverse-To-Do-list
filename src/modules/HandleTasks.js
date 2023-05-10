@@ -44,6 +44,14 @@ export default class HandleTasks {
     this.UI.generateHtmlTasks();
   }
 
+
+  toggleAllElementTrashIcon(element) {
+    this.trash = element.parentElement.querySelector('.trash-icon');
+    this.ellipsis = element.parentElement.querySelector('.fa-ellipsis-v');
+    this.trash.setAttribute('class', 'trash-icon ms-auto text-secundary d-none');
+    this.ellipsis.setAttribute('class', 'icon ellipsis-icon fas fa-ellipsis-v ms-auto text-secondary');
+  }
+
   toggleElementTrashIcon(element) {
     this.trash = element.parentElement.querySelector('.trash-icon');
     this.ellipsis = element.parentElement.querySelector('.fa-ellipsis-v');
@@ -51,5 +59,29 @@ export default class HandleTasks {
     this.ellipsis.setAttribute('class', 'icon ellipsis-icon fas fa-ellipsis-v ms-auto text-secondary d-none');
   }
 
-  
+  updateValue() {
+    window.addEventListener('click', (e) => {
+      if (e.target.className.includes('text-description')) {
+        const nodeListInputs = document.querySelectorAll('.text-description');
+        const index = parseInt(e.target.id.slice(11), 10);
+        const trash = e.target.parentElement.querySelector('.trash-icon');
+
+        nodeListInputs.forEach((input) => {
+          if (input !== e.target) {
+            this.toggleAllElementTrashIcon(input);
+          }
+        });
+
+        this.toggleElementTrashIcon(e.target);
+
+        trash.addEventListener('click', () => {
+          this.removeItem(index);
+        });
+
+        e.target.addEventListener('blur', () => {
+          this.store.updateDescription(index, e.target.value);
+        });
+      } 
+    });
+  }
 }
