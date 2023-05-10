@@ -28,6 +28,8 @@ export default class Store {
       this.updateLocalStorage();
     }
   
-    // changeOrder(fromIndex, toIndex){};
+    getItems() {
+        return [...this.task_data];
+      }
  
   }
