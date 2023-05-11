@@ -7,10 +7,10 @@ export default class HandleTasks {
   addItem() {
     this.input = document.getElementById('add-task');
     this.arrowIcon = document.querySelector('.arrow-icon');
-
+    
     this.input.addEventListener('keydown', (e) => {
-      const i = this.store.getItems().length;
-
+      
+      const i = (this.store.getItems().length)+1;
       if (e.key === 'Enter' && e.target.value) {
         const obj = {
           description: e.target.value,
