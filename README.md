@@ -18,7 +18,7 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements(#acknowledgements)
+- [🙏 Acknowledgements](#acknowledgements)
 
 - [📝 License](#license)
 
@@ -48,7 +48,7 @@ The repository also contains files for setting up linters and validators.
 
 
 ### Key Features <a name="key-features"></a>
-## Awesome Books - [HTML/CSS & JavaScript Awesome Books project](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m2_plain_js_classes_v1_1.md)
+## To Do list: [add & remove](https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/m3_add_remove.md)
 ### Features Added:
 - Set up a new project with webpack 
 - Create an index.html file and 
@@ -73,7 +73,7 @@ The repository also contains files for setting up linters and validators.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](#)
+- [Not available now](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,7 +176,7 @@ You can redeploy this project by adding new lines of code to source files.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-Awesome books: a complete website with navigation[this](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m4_full_website_v1_1.md) will be added.
+To Do list: interactive list [this](https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/m2_interactive_list.md) will be added.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
