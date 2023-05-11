@@ -18,7 +18,7 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements(#acknowledgements)
+- [🙏 Acknowledgements](#acknowledgements)
 
 - [📝 License](#license)
 
@@ -47,9 +47,8 @@ The repository also contains files for setting up linters and validators.
   </ul>
 
 
-
 ### Key Features <a name="key-features"></a>
-## Awesome Books - [HTML/CSS & JavaScript Awesome Books project](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m2_plain_js_classes_v1_1.md)
+## To Do list: [add & remove](https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/m3_add_remove.md)
 ### Features Added:
 - Set up a new project with webpack 
 - Create an index.html file and 
@@ -62,11 +61,19 @@ The repository also contains files for setting up linters and validators.
 - A function to iterate over the tasks array and populate an HTML list item element for each task.
 - On page load render the dynamically created list of tasks in the dedicated placeholder. The list  appear in order of the index values for each task.
 - Create a style.css and set rules for the To Do List. CSS must be loaded by Webpack Style/CSS Loader. 
+-All hardcoded items deleted from the tasks array. List structure #1 .
+- A new JavaScript file for the new functionality created.
+- A function for adding a new task is implemented
+- A function for deleting a task is implemented
+- A function for editing task descriptions. implemented
+- By default new tasks wil have the property completed set to false and the property index set to the value of the new array length (i.e. if you're adding a 5th task to the list, the index of that task will be equal to 5).
+- Deleting a task will update all remaining items' indexes, so they represent the current list order and are unique(i.e. if you're deleting the first task index 1 from the list, the index of the next task(2) will set to 1)..
+- All changes to the To Do List will be saved in local storage.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](#)
+- [Not available now](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +154,7 @@ npx hint .
 ```
 Track CSS linter errors run:
 ```
-npx stylelint "**/*.{css,scss}
+npx stylelint "**/*.{css,scss}"
 ```
 Track JavaScript linter errors run:
 ```
@@ -169,7 +176,7 @@ You can redeploy this project by adding new lines of code to source files.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-Awesome books: a complete website with navigation[this](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m4_full_website_v1_1.md) will be added.
+To Do list: interactive list [this](https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/m2_interactive_list.md) will be added.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,8 +195,6 @@ Give me ⭐️ If you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - I would like to thank Microverse program for providing me this great chance.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
