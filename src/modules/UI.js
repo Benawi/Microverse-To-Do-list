@@ -25,13 +25,13 @@ export default class UI {
     this.store.getItems().forEach((obj, index) => {
       const checked = (obj.completed) ? 'checked' : '';
       const lineTrought = (obj.completed) ? 'line-trought' : '';
-      obj.index = index+1;
+      obj.index = index + 1;
 
       this.todoListContainer.innerHTML += `<div id="${obj.index}"class="d-flex justify-content-start align-items-center mt-1">
       <div class="form-check me-1">
         <input class="checkbox form-check-input" type="checkbox" id="blankCheckbox" value="true" aria-label="..." ${checked}>
       </div>
-      <input id="text-input-${obj.index-1}" class="text-description ${lineTrought}" type="text" placeholder="${obj.description}" value="${obj.description}"></input>
+      <input id="text-input-${obj.index - 1}" class="text-description ${lineTrought}" type="text" placeholder="${obj.description}" value="${obj.description}"></input>
       <img src="${EllipsisIcon}" class="icon ellipsis-icon fas fa-ellipsis-v ms-auto text-secondary"/>
       <img src="${TrashIcon}" class="icon trash-icon ms-auto text-secundary d-none"/>
     </div>`;

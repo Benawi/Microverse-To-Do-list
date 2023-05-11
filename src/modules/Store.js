@@ -16,16 +16,16 @@ export default class Store {
   remove(index) {
     this.task_data.splice(index, 1);
     this.task_data = this.task_data.filter((obj, index) => {
-      obj.index = index+1;
+      obj.index = index + 1;
       return true;
     });
     this.updateLocalStorage();
   }
 
   updateDescription(index, description) {
-    if( this.task_data[index]?.description){
-    this.task_data[index].description = description;
-    this.updateLocalStorage();
+    if (this.task_data[index]?.description) {
+      this.task_data[index].description = description;
+      this.updateLocalStorage();
     }
   }
 
