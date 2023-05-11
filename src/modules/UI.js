@@ -2,9 +2,11 @@ import TrashIcon from '../assets/icons/trash-alt-regular.svg';
 import SyncIcon from '../assets/icons/sync-alt-solid.svg';
 import ArrowIcon from '../assets/icons/arrow-right-solid.svg';
 import EllipsisIcon from '../assets/icons/ellipsis-v-solid.svg';
+import CheckBOXHandler from './CheckBoxHandler.js';
 
 export default class UI {
   constructor(store) {
+    this.checkBOXHandler = new CheckBOXHandler(store);
     this.store = store;
   }
 
@@ -36,5 +38,6 @@ export default class UI {
       <img src="${TrashIcon}" class="icon trash-icon ms-auto text-secundary d-none"/>
     </div>`;
     });
+    this.checkBOXHandler.addChangeListner();
   }
 }

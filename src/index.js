@@ -9,4 +9,5 @@ const LIST = new HandleTasks(STORE, UI_INTERFACE);
 
 UI_INTERFACE.generateHtmlTasks();
 LIST.addItem();
+LIST.clearAll();
 LIST.updateValue();
