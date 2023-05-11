@@ -68,7 +68,15 @@ The repository also contains files for setting up linters and validators.
 - A function for editing task descriptions. implemented
 - By default new tasks wil have the property completed set to false and the property index set to the value of the new array length (i.e. if you're adding a 5th task to the list, the index of that task will be equal to 5).
 - Deleting a task will update all remaining items' indexes, so they represent the current list order and are unique(i.e. if you're deleting the first task index 1 from the list, the index of the next task(2) will set to 1)..
-- All changes to the To Do List will be saved in local storage.
+- A new JavaScript file is added and imported as a module:
+     - It contain methods related to the status updates (completed: true / false).
+ - Add event listener to the checkbox (change).
+ - Items object's value for completed key will updated upon user actions.
+- A function for the "Clear all completed" is implemented - button (filter() method used).
+- The updated array of items will be stored in local storage, so the user gets the correct list of values after the page reloads (which means that any changes made to the list will be preserved).
+- The output of the app
+![image](https://github.com/Benawi/Microverse-To-Do-list/assets/21217148/41aff895-051a-4b9b-bddd-623c1a107dbf)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
