@@ -2,7 +2,6 @@ import './styles.css';
 import Store from './modules/Store.js';
 import HandleTasks from './modules/HandleTasks.js';
 import UI from './modules/UI.js';
-import { List } from 'css-tree';
 
 const STORE = new Store();
 const UI_INTERFACE = new UI(STORE);

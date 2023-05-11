@@ -43,25 +43,22 @@ export default class HandleTasks {
     this.UI.generateHtmlTasks();
   }
 
-clearAll() {
+  clearAll() {
     this.clearBtn = document.getElementById('clear-tasks');
     this.clearBtn.addEventListener('click', () => {
       this.store.removeAllCompleted();
       this.UI.generateHtmlTasks();
     });
   }
-  
 
-  removeAllTrashIcons(){
-    this.trash=document.querySelectorAll('.trash-icon');
-    this.ellipsis=document.querySelectorAll('.fa-ellipsis-v');
-    this.trash.forEach((trash,index) => {
+  removeAllTrashIcons() {
+    this.trash = document.querySelectorAll('.trash-icon');
+    this.ellipsis = document.querySelectorAll('.fa-ellipsis-v');
+    this.trash.forEach((trash, index) => {
       trash.setAttribute('class', 'trash-icon ms-auto text-secundary d-none');
-      this.ellipsis[index].setAttribute('class','icon ellipsis-icon fas fa-ellipsis-v ms-auto text-secondary');
+      this.ellipsis[index].setAttribute('class', 'icon ellipsis-icon fas fa-ellipsis-v ms-auto text-secondary');
     });
   }
-
-
 
   toggleAllElementTrashIcon(element) {
     this.trash = element.parentElement.querySelector('.trash-icon');
@@ -99,8 +96,7 @@ clearAll() {
         e.target.addEventListener('blur', () => {
           this.store.updateDescription(index, e.target.value);
         });
-      }
-      else {
+      } else {
         this.removeAllTrashIcons();
       }
     });
