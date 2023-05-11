@@ -36,7 +36,7 @@ export default class Store {
   removeAllCompleted() {
     this.task_data = this.task_data.filter((obj) => !obj.completed);
     this.task_data = this.task_data.filter((obj, index) => {
-      obj.index = index+1;
+      obj.index = index + 1;
       return true;
     });
     this.updateLocalStorage();
