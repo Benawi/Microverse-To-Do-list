@@ -81,7 +81,7 @@ The repository also contains files for setting up linters and validators.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Not available now](#)
+- [Live Demo](https://benawi.github.io/Microverse-To-Do-list/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
