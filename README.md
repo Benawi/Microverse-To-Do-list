@@ -117,7 +117,7 @@ npm install webpack webpack-cli --save-dev
 ```
 npm install --save-dev html-webpack-plugin
 ```
-### In order to import a CSS file  add the style-loader and css-loader to your module configuration
+### To import a CSS file  add the style-loader and css-loader to your module configuration
 - Run the following command:
 ```
 npm install --save-dev style-loader css-loader
