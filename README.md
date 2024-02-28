@@ -50,7 +50,7 @@ The repository also contains files for setting up linters and validators.
 ### Key Features <a name="key-features"></a>
 ## To Do list: [add & remove](https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/m3_add_remove.md)
 ### Features Added:
-- Set up a new project with webpack 
+- Set up a new project with Webpack 
 - Create an index.html file and 
 - To Do List placeholder (div or ul element).
 - The index.html file must be set as a template using the HTML Webpack Plugin.
