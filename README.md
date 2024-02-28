@@ -54,7 +54,7 @@ The repository also contains files for setting up linters and validators.
 - Create an index.html file and 
 - To Do List placeholder (div or ul element).
 - The index.html file must be set as a template using the HTML Webpack Plugin.
-- Create an index.js file and set an array of some simple to do tasks (array of objects). Each task object  contain three keys:
+- Create an index.js file and set an array of some simple to do tasks (array of objects). Each task object  contains three keys:
    - description [string].
    - completed [bool].
    - index: [number].
