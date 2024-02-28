@@ -60,8 +60,8 @@ The repository also contains files for setting up linters and validators.
    - index: [number].
 - A function to iterate over the tasks array and populate an HTML list item element for each task.
 - On page load render the dynamically created list of tasks in the dedicated placeholder. The list  appear in order of the index values for each task.
-- Create a style.css and set rules for the To Do List. CSS must be loaded by Webpack Style/CSS Loader. 
--All hardcoded items deleted from the tasks array. List structure #1 .
+- Create a style.css and set rules for the To-Do List. CSS must be loaded by Webpack Style/CSS Loader. 
+-All hardcoded items deleted from the tasks array. List structure #1.
 - A new JavaScript file for the new functionality created.
 - A function for adding a new task is implemented
 - A function for deleting a task is implemented
