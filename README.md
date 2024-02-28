@@ -29,7 +29,7 @@ To-do list Microverse! project is a repository consisting of the following files
 - HTML file 
 - CSS file 
 - JS files
-- Html, CSS, and JS linters file
+- HTML, CSS, and JS linters file
 
 
 The repository also contains files for setting up linters and validators.
@@ -52,7 +52,7 @@ The repository also contains files for setting up linters and validators.
 ### Features Added:
 - Set up a new project with Webpack 
 - Create an index.html file and 
-- To Do List placeholder (div or ul element).
+- To-Do List placeholder (div or ul element).
 - The index.html file must be set as a template using the HTML Webpack Plugin.
 - Create an index.js file and set an array of some simple to do tasks (array of objects). Each task object  contains three keys:
    - description [string].
