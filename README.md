@@ -29,7 +29,7 @@ To-do list Microverse! project is a repository consisting of the following files
 - HTML file 
 - CSS file 
 - JS files
-- Html,CSS and JS linters file
+- Html, CSS, and JS linters file
 
 
 The repository also contains files for setting up linters and validators.
