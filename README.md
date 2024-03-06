@@ -160,7 +160,7 @@ Track HTML linter errors run:
 ```
 npx hint .
 ```
-Track CSS linter errors run:
+Track CSS linter errors run
 ```
 npx stylelint "**/*.{css,scss}"
 ```
